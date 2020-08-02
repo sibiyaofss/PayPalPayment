@@ -1,0 +1,126 @@
+2020-08-02 16:22:30.140  INFO 15604 --- [main] com.paypal.PayPalPaymentApplication      : No active profile set, falling back to default profiles: default
+2020-08-02 16:22:31.563  INFO 15604 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abcfac93-a0dc-3712-b618-e8535a0c89da
+2020-08-02 16:22:31.914  INFO 15604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1002 (http)
+2020-08-02 16:22:31.924  INFO 15604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-02 16:22:31.924  INFO 15604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-02 16:22:32.109  INFO 15604 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/PAY]    : Initializing Spring embedded WebApplicationContext
+2020-08-02 16:22:32.110  INFO 15604 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1938 ms
+2020-08-02 16:22:32.249  INFO 15604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-02 16:22:32.439  INFO 15604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-02 16:22:32.488  INFO 15604 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-08-02 16:22:33.342  INFO 15604 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-02 16:22:33.566  INFO 15604 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f7a2a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@1578b8ec, org.springframework.security.web.header.HeaderWriterFilter@1b4872bc, org.springframework.security.web.authentication.logout.LogoutFilter@87d9a01, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d0cc83e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@415a3f6a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@42ed89da, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c1e14f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13d019a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c3719e5, org.springframework.security.web.session.SessionManagementFilter@1e1237ab, org.springframework.security.web.access.ExceptionTranslationFilter@260e3837, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2dfeb141]
+2020-08-02 16:22:33.596  INFO 15604 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-02 16:22:33.662  INFO 15604 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-02 16:22:34.287  WARN 15604 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-02 16:22:34.371  INFO 15604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1002 (http) with context path '/PAY'
+2020-08-02 16:22:34.792  INFO 15604 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-02 16:22:34.810  INFO 15604 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-02 16:22:34.841  INFO 15604 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-02 16:22:34.976  INFO 15604 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPaymentTnxsForUserUsingGET_1
+2020-08-02 16:22:34.980  INFO 15604 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPaymentTnxsForUserUsingGET_2
+2020-08-02 16:22:34.984  INFO 15604 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPaymentTnxsForUserUsingGET_3
+2020-08-02 16:22:35.016  INFO 15604 --- [main] com.paypal.PayPalPaymentApplication      : Started PayPalPaymentApplication in 6.47 seconds (JVM running for 7.746)
+2020-08-02 16:23:04.209  INFO 15604 --- [http-nio-1002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/PAY]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-02 16:23:04.209  INFO 15604 --- [http-nio-1002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-02 16:23:04.218  INFO 15604 --- [http-nio-1002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-08-02 16:23:36.666 ERROR 15604 --- [http-nio-1002-exec-1] com.paypal.controller.PaymentController  : No Data Found
+2020-08-02 16:24:37.515 ERROR 15604 --- [http-nio-1002-exec-5] com.paypal.controller.PaymentController  : No Data Found
+2020-08-02 16:57:42.952  WARN 15604 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m10s328ms41µs).
+2020-08-02 19:26:19.772  INFO 18288 --- [main] com.paypal.PayPalPaymentApplication      : No active profile set, falling back to default profiles: default
+2020-08-02 19:26:22.370  INFO 18288 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abcfac93-a0dc-3712-b618-e8535a0c89da
+2020-08-02 19:26:22.874  INFO 18288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1002 (http)
+2020-08-02 19:26:22.888  INFO 18288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-02 19:26:22.889  INFO 18288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-02 19:26:23.146  INFO 18288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/PAY]    : Initializing Spring embedded WebApplicationContext
+2020-08-02 19:26:23.147  INFO 18288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3350 ms
+2020-08-02 19:26:23.308  INFO 18288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-02 19:26:23.517  INFO 18288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-02 19:26:23.580  INFO 18288 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-08-02 19:26:24.498  INFO 18288 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-02 19:26:24.762  INFO 18288 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@283baa39, org.springframework.security.web.context.SecurityContextPersistenceFilter@6248cfab, org.springframework.security.web.header.HeaderWriterFilter@213835b6, org.springframework.security.web.authentication.logout.LogoutFilter@6ac756b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5341e71a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@531ec2ca, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@416b1265, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45c90a05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@377dbc50, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2830315f, org.springframework.security.web.session.SessionManagementFilter@37e55819, org.springframework.security.web.access.ExceptionTranslationFilter@483b7dc4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f1158ee]
+2020-08-02 19:26:24.795  INFO 18288 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-02 19:26:24.872  INFO 18288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-02 19:26:25.801  WARN 18288 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-02 19:26:25.913  WARN 18288 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 1002 is already in use
+2020-08-02 19:26:25.914  WARN 18288 --- [main] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'tomcatMetricsBinder': java.lang.NullPointerException
+2020-08-02 19:26:25.916  INFO 18288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-02 19:26:25.919  INFO 18288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-02 19:26:25.924  INFO 18288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-02 19:26:25.927  INFO 18288 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-02 19:26:25.947  INFO 18288 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-02 19:26:25.954 ERROR 18288 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 1002 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 1002 or configure this application to listen on another port.
+
+2020-08-02 19:26:51.854  INFO 15604 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-02 19:26:52.209  INFO 15604 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-02 19:26:52.213  INFO 15604 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/PAY]    : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-08-02 19:26:52.220  WARN 15604 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [PAY] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-08-02 19:26:52.229  INFO 15604 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-02 19:26:52.232  INFO 15604 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-02 19:26:52.235  INFO 15604 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-02 19:27:01.099  INFO 17744 --- [main] com.paypal.PayPalPaymentApplication      : No active profile set, falling back to default profiles: default
+2020-08-02 19:27:04.064  INFO 17744 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abcfac93-a0dc-3712-b618-e8535a0c89da
+2020-08-02 19:27:04.477  INFO 17744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1002 (http)
+2020-08-02 19:27:04.492  INFO 17744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-02 19:27:04.493  INFO 17744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-02 19:27:04.781  INFO 17744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/PAY]    : Initializing Spring embedded WebApplicationContext
+2020-08-02 19:27:04.781  INFO 17744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3654 ms
+2020-08-02 19:27:04.938  INFO 17744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-02 19:27:05.286  INFO 17744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-02 19:27:05.346  INFO 17744 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2020-08-02 19:27:06.406  INFO 17744 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-02 19:27:06.673  INFO 17744 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29892a77, org.springframework.security.web.context.SecurityContextPersistenceFilter@61957d9c, org.springframework.security.web.header.HeaderWriterFilter@31d4b3e8, org.springframework.security.web.authentication.logout.LogoutFilter@4ad1a276, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@13c90c06, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@58f7215c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5341e71a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@483b7dc4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@df7d1d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@405d8a80, org.springframework.security.web.session.SessionManagementFilter@1fc1c7e, org.springframework.security.web.access.ExceptionTranslationFilter@5f3f3d00, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3355168]
+2020-08-02 19:27:06.714  INFO 17744 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-02 19:27:06.803  INFO 17744 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-02 19:27:07.549  WARN 17744 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-02 19:27:07.723  INFO 17744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1002 (http) with context path '/PAY'
+2020-08-02 19:27:08.327  INFO 17744 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-02 19:27:08.361  INFO 17744 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-02 19:27:08.430  INFO 17744 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-02 19:27:08.645  INFO 17744 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPaymentTnxsForUserUsingGET_1
+2020-08-02 19:27:08.651  INFO 17744 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPaymentTnxsForUserUsingGET_2
+2020-08-02 19:27:08.655  INFO 17744 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getPaymentTnxsForUserUsingGET_3
+2020-08-02 19:27:08.704  INFO 17744 --- [main] com.paypal.PayPalPaymentApplication      : Started PayPalPaymentApplication in 9.683 seconds (JVM running for 11.883)
+2020-08-02 19:28:29.147  INFO 17744 --- [http-nio-1002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/PAY]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-02 19:28:29.148  INFO 17744 --- [http-nio-1002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-02 19:28:29.160  INFO 17744 --- [http-nio-1002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-08-02 20:05:01.077  WARN 17744 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m25s679ms570µs100ns).
+2020-08-02 20:08:31.380  INFO 17744 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-02 20:08:31.642  INFO 17744 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-02 20:08:31.645  INFO 17744 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/PAY]    : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-08-02 20:08:31.650  WARN 17744 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [PAY] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-08-02 20:08:31.662  INFO 17744 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-02 20:08:31.668  INFO 17744 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-02 20:08:31.672  INFO 17744 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
